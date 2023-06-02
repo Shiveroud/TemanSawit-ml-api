@@ -9,13 +9,13 @@ from utils.format_output import format_image_pred
 
 
 model = None
-IMAGE_WIDTH = 500    
+IMAGE_WIDTH = 500
 IMAGE_HEIGHT = 889
 IMAGE_CHANNELS = 3
 CLASSES = ['empty_bunch', 'overripe', 'ripe', 'rotten', 'underripe', 'unripe']
 
 def load_model():
-    path = './model'
+    path = 'model'
     model = tf.keras.models.load_model(path, custom_objects={'f1_m': f1_m})
     return model
 
