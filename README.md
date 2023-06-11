@@ -1,5 +1,5 @@
 # TemanSawit-ml-api
-## 4. Ripeness Model API
+## Ripeness Model API
 
 This endpoint provides a function to detect objects in images that relate to the maturity level of oil palm fruits. Users can submit an image to the API, and the API will return the detected objects with a bounding box and the two highest predicted ripeness values from the input palm fruit image. The API uses a pre-trained object detection model for fast and accurate object detection.
 
