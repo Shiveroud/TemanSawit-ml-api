@@ -19,3 +19,29 @@ POST {{Host}}/api/predict
     | --------------| ----------------------------------------------|
     | Download sample |https://media.istockphoto.com/id/482549452/id/foto/tandan-buah-kelapa-sawit.jpg?s=1024x1024&w=is&k=20&c=XZCIAFUT81rkLwOmBjFqTZPCNNFUh7S8UTBbYXmrBKU= |
     
+**Response:**
+
+```JSON
+    {
+    "classes": [
+        "empty_bunch",
+        "overripe",
+        "ripe",
+        "rotten",
+        "underripe",
+        "unripe"
+    ],
+    "prob": [
+        6.216210022103041e-05,
+        0.025118131190538406,
+        0.6271576285362244,
+        7.381191971944645e-05,
+        0.3363390564918518,
+        0.011249292641878128
+    ],
+    "top_2": {
+        "ripe": 0.6271576285362244,
+        "underripe": 0.3363390564918518
+    }
+  }
+```
