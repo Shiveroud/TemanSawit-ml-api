@@ -45,3 +45,24 @@ POST {{Host}}/api/predict
     }
   }
 ```
+
+## Step
+1. Clone the repository.
+```bash
+git clone https://github.com/TemanSawit/TemanSawit-ml-api.git
+```
+2. Install the required dependencies.
+```bash
+pip install -r requirements.txt
+```
+3. Navigate to the directory.
+4. Run the following command in the directory terminal:
+```bash
+python .\server.py
+```
+or
+```bash
+python3 .\server.py
+```
+6. After the application startup complete, send a request to ```http://localhost:8080/api/predict``` with a photo of oil palm fruit as an argument called ```file```.
+7. The api will returned some datas related to the predictions.
