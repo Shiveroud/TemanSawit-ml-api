@@ -7,8 +7,8 @@ from utils.format_output import ImagePred
 app = FastAPI()
 
 @app.get('/')
-def hello_world(name: str):
-    return {'hello': name}
+def hello_world():
+    return {'API Running'}
 
 @app.post('/api/predict', response_model=ImagePred)
 async def predict_image(file: UploadFile = File(...)):
