@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get('/')
 def hello_world():
-    return {'message': 'API Running'}
+    return 'Api Running'
 
 @app.post('/api/predict', response_model=ImagePred)
 async def predict_image(file: UploadFile = File(...)):
