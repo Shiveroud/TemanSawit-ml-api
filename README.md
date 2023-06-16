@@ -49,7 +49,7 @@ POST {{Host}}/api/predict
 ## Step
 1. Clone the repository.
 ```bash
-git clone https://github.com/TemanSawit/TemanSawit-ml-api.git
+git clone https://github.com/C23-PS190-TemanSawit/TemanSawit-ml-api.git
 ```
 2. Install the required dependencies.
 ```bash
